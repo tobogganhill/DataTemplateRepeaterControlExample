@@ -14,15 +14,13 @@ namespace DataTemplateRepeaterControl.Services
             _items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new ItemA { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item A.", },
-                new ItemB { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item B." },
-                new ItemC { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item C." },
-                new ItemB { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is also an item B." },
-                new ItemC { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is also an item C." },
-                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is also an item A." },
-                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Seventh item", Description="This too, is also an item A." },
-                new ItemB { Id = Guid.NewGuid().ToString(), Text = "Eighth item", Description="This too, is also an item B." },
-                new ItemC { Id = Guid.NewGuid().ToString(), Text = "Ninth item", Description="This too, is also an item C." },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Canada Birth Certificate", Description="Credential A", },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "MasterCard", Description="Credential B" },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Starbucks", Description="Credential Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor", },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="Credential C" },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Seventh item", Description="Credential C" },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Eighth item", Description="Credential C" },
+                new ItemA { Id = Guid.NewGuid().ToString(), Text = "Ninth item", Description="Credential C" },
             };
 
             foreach (var item in mockItems)

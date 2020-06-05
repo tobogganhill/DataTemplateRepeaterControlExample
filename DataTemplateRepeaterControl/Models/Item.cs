@@ -32,7 +32,7 @@ namespace DataTemplateRepeaterControl.Models
                 // HACK: At the time of writing this, XF 4.2 ImageSource.FromUri() is throwing exceptions on Android and there doesn't appear
                 // to be a fix in any of the previews. Just reading this in this way to finish off this project. This obviously is NOT the
                 // best way to get an image from a Uri but hey, that's not what this project is about.
-                var uri = new Uri($"https://picsum.photos/200?{Guid.NewGuid().ToString()}");
+                var uri = new Uri($"https://picsum.photos/200");
                 byte[] imageData = null;
 
                 using (var webClient = new WebClient())

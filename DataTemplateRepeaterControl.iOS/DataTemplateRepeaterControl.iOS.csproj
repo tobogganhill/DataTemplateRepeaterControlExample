@@ -111,19 +111,33 @@
     </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\arrow.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <BundleResource Include="Resources\xamarinhowto.png" />
-    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto%403x.png" />
-    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto%402x.png" />
-    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto.png" />
+    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\xamarinhowto.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\xamarinhowto.imageset\Contents.json">
       <Visible>False</Visible>
     </ImageAsset>
     <BundleResource Include="Resources\list.png" />
     <BundleResource Include="Resources\repeater.png" />
-    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater%403x.png" />
-    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater%402x.png" />
-    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater.png" />
+    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\repeater.imageset\repeater.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\repeater.imageset\Contents.json">
       <Visible>False</Visible>
     </ImageAsset>
