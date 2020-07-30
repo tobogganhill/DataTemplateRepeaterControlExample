@@ -5,8 +5,17 @@
     android:id="@+id/sliding_tabs"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?attr/colorPrimary"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:tabIndicatorColor="@android:color/white"
-    app:tabGravity="fill"
-    app:tabMode="fixed" />
+    app:tabIndicator="@drawable/tab_indicator"
+    android:paddingBottom="8dp"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    app:tabIndicatorColor="#ff0000"
+    app:tabGravity="center"
+    app:tabTextAppearance="@style/TextAppearance.Design.Tab"
+    app:tabMode="fixed"
+    app:tabIndicatorFullWidth="false"
+    
+     />
+
+
+
+

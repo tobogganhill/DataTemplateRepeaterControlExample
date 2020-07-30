@@ -1,18 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage Title="Credentials"
+<ContentPage Title="CanaCred SSI Wallet "
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DataTemplateRepeaterControl.Views.ListViewItemsPage"
              xmlns:templateselectors="clr-namespace:DataTemplateRepeaterControl.TemplateSelectors"
              x:Name="ListViewItemsPageRef">
-    <StackLayout>
-        <ListView x:Name="ListViewItems"
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label
+               Text="CanaCred Wallet"
+               FontSize="32"
+               TextColor="White"
+               VerticalTextAlignment="Center" FontAttributes="Bold,Italic" />
+            <Image Source="menu.png" HorizontalOptions="EndAndExpand">
+            </Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <StackLayout Orientation="Vertical" BackgroundColor="#FFFFFF">
+        <!--<Label TextColor="#FF0000" HorizontalOptions="Center" VerticalOptions="Center" Visual="Material" FontAttributes="Bold" FontSize="Caption" HorizontalTextAlignment="Center" InputTransparent="False" IsVisible="True" BackgroundColor="#FFFFFF" />-->
+        <Picker ItemsSource="{Binding FilterOptions}" 
+                SelectedItem="{Binding SelectedFilter}" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Fill" BackgroundColor="#FFFFFF" FontSize="Caption" TextColor="#FF0000" IsVisible="True" InputTransparent="False" Margin="58,-10,240,0" Title="FILTER BY TYPE" TitleColor="#000000" SelectedIndex="1" IsEnabled="True" Visual="Default" FlowDirection="MatchParent" FontAttributes="Bold" Opacity="1" />
+        <StackLayout>
+            <Frame Padding="20" BackgroundColor="#ff0000">
+                <ListView x:Name="ListViewItems"
+                  SeparatorColor="Red"
                   ItemsSource="{Binding Items}"
-                  VerticalOptions="FillAndExpand"
-                  HasUnevenRows="true">
-            <ListView.ItemTemplate>
-                <templateselectors:SimpleTemplateSelector />
-            </ListView.ItemTemplate>
-        </ListView>
+                  ItemSelected="OnListViewItemSelected"
+                  VerticalOptions="StartAndExpand"
+                  HasUnevenRows="true"
+                  BackgroundColor="#ff0000" SelectionMode="None" VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <templateselectors:SimpleTemplateSelector />
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
+

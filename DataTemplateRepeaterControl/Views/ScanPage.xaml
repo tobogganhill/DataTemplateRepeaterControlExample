@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="CanaCred SSI Wallet"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DataTemplateRepeaterControl.Views.ScanPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             BackgroundColor="#ff0000">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label
+               Text="CanaCred Wallet"
+               FontSize="32"
+               TextColor="White"
+               VerticalTextAlignment="Center" FontAttributes="Bold,Italic" />
+            <ImageButton Source="menu.png"
+                         x:Name="showPopupMenu"
+                         HorizontalOptions="EndAndExpand"
+                         VerticalOptions="CenterAndExpand"
+                         Clicked="OnImageButtonClicked" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,20">
+            <Frame  x:Name="Present" BorderColor="Black" CornerRadius="20" Padding="10" Margin="0" BackgroundColor="#FFFFFF">
+                <StackLayout Margin="10" CascadeInputTransparent="False" VerticalOptions="End">
+                    <Image Source="qr_code" VerticalOptions="Center" HorizontalOptions="Center" Margin="0"/>
+                    <Label TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large" Text="Present QR Code" FontAttributes="Bold" />
+                </StackLayout>
+            </Frame>
+            <Frame x:Name="Scan" BackgroundColor="#FFFFFF" BorderColor="Black" CornerRadius="20" Padding="10" Margin="0,20,0,0" Visual="Default">
+                <StackLayout Margin="10" CascadeInputTransparent="False" VerticalOptions="End">
+                    <Image Source="qr_scan" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
+                    <Label TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large" Text="Scan QR Code" FontAttributes="Bold" />
+                </StackLayout>
+            </Frame>
+            <Label x:Name="label"
+               Text=""
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"  />
+
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnTapped" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

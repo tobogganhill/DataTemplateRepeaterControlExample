@@ -1,6 +1,6 @@
-﻿using System.ComponentModel;
+﻿using DataTemplateRepeaterControl.ViewModels;
+using System.ComponentModel;
 using System.Linq;
-using DataTemplateRepeaterControl.ViewModels;
 using Xamarin.Forms;
 
 namespace DataTemplateRepeaterControl.Views
@@ -8,9 +8,11 @@ namespace DataTemplateRepeaterControl.Views
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
+
     public partial class ListViewItemsPage : ContentPage
     {
         ListItemsViewModel viewModel;
+
 
         public ListViewItemsPage()
         {
@@ -18,6 +20,7 @@ namespace DataTemplateRepeaterControl.Views
 
             BindingContext = viewModel = new ListItemsViewModel();
         }
+
 
         protected override void OnAppearing()
         {
@@ -28,5 +31,17 @@ namespace DataTemplateRepeaterControl.Views
                 viewModel.LoadItemsCommand.Execute(null);
             }
         }
+
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+
+
+                await DisplayAlert("Alert", e.SelectedItem.ToString(), "OK");
+
+            }
+        }
+
     }
 }

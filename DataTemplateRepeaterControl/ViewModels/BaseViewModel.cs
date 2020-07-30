@@ -1,14 +1,14 @@
-﻿using System;
+﻿using DataTemplateRepeaterControl.Models;
+using DataTemplateRepeaterControl.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using DataTemplateRepeaterControl.Models;
-using DataTemplateRepeaterControl.Services;
 using Xamarin.Forms;
 
 namespace DataTemplateRepeaterControl.ViewModels
 {
-    public  class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 
@@ -17,7 +17,7 @@ namespace DataTemplateRepeaterControl.ViewModels
         public string Title { get; set; }
 
         protected bool SetProperty<T>(ref T backingStore, T value,
-            [CallerMemberName]string propertyName = "",
+            [CallerMemberName] string propertyName = "",
             Action onChanged = null)
         {
             if (EqualityComparer<T>.Default.Equals(backingStore, value))

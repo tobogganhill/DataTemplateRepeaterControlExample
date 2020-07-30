@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DataTemplateRepeaterControl.Views.Login" Title="CanaCred Wallet" WidthRequest="20" Padding="0" BackgroundColor="#ff0000">
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,20" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Frame BorderColor="Black" CornerRadius="20" Padding="20">
+                <StackLayout>
+                    <Image Source="key_outline" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0"/>
+                    <Label TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large" Text="CanaCred Login" FontAttributes="Bold" />
+                    <Entry Placeholder="ID"></Entry>
+                    <Entry Placeholder="Code" IsPassword="True"></Entry>
+                    <Button Text="ENTER" TextColor="White" BackgroundColor="#C0C0C0" Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+  

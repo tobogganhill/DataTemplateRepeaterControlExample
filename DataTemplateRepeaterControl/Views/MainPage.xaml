@@ -5,9 +5,11 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             mc:Ignorable="d"
             xmlns:views="clr-namespace:DataTemplateRepeaterControl.Views"
-            x:Class="DataTemplateRepeaterControl.Views.MainPage">
+            x:Class="DataTemplateRepeaterControl.Views.MainPage"
+            >
+
     <TabbedPage.Children>
-        <NavigationPage Title="ListView">
+        <NavigationPage Title="Credentials" >
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS"
@@ -18,7 +20,18 @@
                 <views:ListViewItemsPage />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Repeater">
+        <NavigationPage Title="Scan" >
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource" >
+                    <On Platform="iOS"
+                        Value="repeater.png" />
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:ScanPage />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Connections"  >
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS"
@@ -26,8 +39,10 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:RepeaterItemsPage />
+                <views:DetailPage />
             </x:Arguments>
         </NavigationPage>
+
+
     </TabbedPage.Children>
 </TabbedPage>

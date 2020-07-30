@@ -1,8 +1,6 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using DataTemplateRepeaterControl.Services;
+﻿using DataTemplateRepeaterControl.Services;
 using DataTemplateRepeaterControl.Views;
+using Xamarin.Forms;
 
 namespace DataTemplateRepeaterControl
 {

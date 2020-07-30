@@ -1,7 +1,5 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace DataTemplateRepeaterControl.Views
 {
@@ -14,5 +12,6 @@ namespace DataTemplateRepeaterControl.Views
         {
             InitializeComponent();
         }
+
     }
 }

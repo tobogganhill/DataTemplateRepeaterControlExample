@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="CanaCred SSI Wallet"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DataTemplateRepeaterControl.Views.AboutPage"
+             BackgroundColor="#ff0000">
+    <ContentPage.Content>
+        <!--Left, Top, Right, Bottom-->
+        <StackLayout Margin="20,20,20,20">
+            <Frame BorderColor="Black" CornerRadius="20" Padding="20">
+                <StackLayout BackgroundColor="#FFFFFF" Margin="10" CascadeInputTransparent="False" VerticalOptions="End">
+                    <Image Source="qr_code_outline" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0"/>
+                    <Label TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large" Text="What is SSI?" FontAttributes="Bold" />
+                    <ScrollView VerticalOptions="Fill" Padding="10" Margin="10">
+                        <Label TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Medium">
+                            <Label.Text>Self-sovereign identity (SSI) provides individuals with control of their identity information.&#x0a;&#x0a;Identity can be expanded to other uses through verifiable credentials, in order to prove things about yourself.&#x0a;&#x0a;Privacy is a critical feature of SSI: the identity owner is in control of who sees what information. This represents a change in how identity functions on the internet.&#x0a;&#x0a;Credential issuers, holders, and verifiers are peers on an SSI network. Any person or organization can play any or all of the roles, creating a decentralized system for the exchange of trustworthy, digital credentials.&#x0a;&#x0a;Credential issuers determine what credentials to issue, what the credential means, and how they'll validate the information they put in the credential.&#x0a;&#x0a;Credential holders determine what credentials they need and which they'll employ in workflows to prove things about themselves.&#x0a;&#x0a;Credential verifiers determine what credentials to accept, and which issuers to trust.&#x0a;&#x0a;While credentials can be revoked individually, the identity owner still controls her own identity wallet and all the other credentials collected.&#x0a;&#x0a;The result is an internet identity system that is more flexible and more secure.</Label.Text>
+                        </Label>
+
+                    </ScrollView>
+                    <Image Source="cube_outline" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,20"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+

@@ -1,5 +1,4 @@
-﻿using System;
-namespace DataTemplateRepeaterControl.ViewModels
+﻿namespace DataTemplateRepeaterControl.ViewModels
 {
     public class RepeaterItemsViewModel : ListItemsViewModel
     {
